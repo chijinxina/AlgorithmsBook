@@ -12,6 +12,9 @@ int LCS1(int d[100][100],int n, int m)
 {
     return d[n][m];
 }
+int chijinxin(){
+    return 1;
+}
 
 int main(){
     string a,b;
