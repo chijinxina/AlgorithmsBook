@@ -8,9 +8,22 @@ using namespace std;
 
 int dp[100][100];
 
-int LCS1(int d[100][100],int n, int m)
+int LCS1(string &a,string &b)
 {
-    return d[n][m];
+    int n=a.length();
+    int m=b.length();
+    memset(dp,0, sizeof(dp));
+    for(int i=1;i<=n;++i)
+    {
+        for (int j = 1; j <= m; ++j)
+        {
+            if(a[i-1]==b[j-1])
+                dp[i][j]=dp[i-1][j-1]+1;
+            else
+                dp[i][j]=max(dp[i][j-1],dp[i-1][j]);
+        }
+    }
+    return dp[n][m];
 }
 
 int main(){
@@ -18,10 +31,7 @@ int main(){
     int n,m;
     while (cin>>a>>b)
     {
-        n=a.length();
-        m=b.length();
-        cout<<n<<" "<<m<<endl;
-        cout<<LCS1(dp,1,2)<<endl;
+        cout<<LCS1(a,b)<<endl;
     }
     return 0;
 }
