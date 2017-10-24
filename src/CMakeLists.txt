@@ -4,3 +4,5 @@ add_executable(LCS1_huiwenchuan LCS1_huiwenchuan.cpp)
 add_executable(LCS1_POJ_AGTC LCS1_POJ_AGTC.cpp)
 add_executable(SingleNumber SingleNumber_leetcode.cpp)
 add_executable(InsertSort_for_List InsertSort_for_List.cpp)
+add_executable(biantaitiaotaijie biantaitiaotaijie.cpp)
+
