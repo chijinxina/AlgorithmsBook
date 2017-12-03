@@ -8,6 +8,6 @@ add_executable(InsertSort_for_List 2016-05/InsertSort_for_List.cpp)
 add_executable(biantaitiaotaijie 2016-05/biantaitiaotaijie.cpp)
 
 #############################2017.12.3###########################
-add_executable(2StackImplQueue 2017-12/2StackImplQueue.cpp)
-add_executable(2QueueImplStack 2017-12/2QueueImplStack.cpp)
-
+add_executable(2StackImplQueue 2017-12/2StackImplQueue.cpp) #两个栈实现队列
+add_executable(2QueueImplStack 2017-12/2QueueImplStack.cpp) #两个队列实现栈
+add_executable(Stack_with_MinVal 2017-12/Stack_with_MinVal.cpp) #带最小值的栈
