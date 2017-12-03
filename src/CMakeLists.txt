@@ -9,4 +9,5 @@ add_executable(biantaitiaotaijie 2016-05/biantaitiaotaijie.cpp)
 
 #############################2017.12.3###########################
 add_executable(2StackImplQueue 2017-12/2StackImplQueue.cpp)
+add_executable(2QueueImplStack 2017-12/2QueueImplStack.cpp)
 
