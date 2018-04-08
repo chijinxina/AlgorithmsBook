@@ -3,7 +3,7 @@
 //
 #include <iostream>
 #include <queue>
-
+using namespace std;
 /*
  * 用两个队列实现栈
  */
@@ -78,23 +78,27 @@ void MyStack<T>::pop() {
 }
 
 int main(){
-    MyStack<int> s;
-    s.push(1);
-    s.push(2);
-    s.push(3);
-    std::cout<<s.top()<<std::endl;
-    s.pop();
-    std::cout<<s.top()<<std::endl;
-    s.push(20);
-    s.push(4);
-    std::cout<<s.top()<<std::endl;
-    s.pop();
-    std::cout<<s.top()<<std::endl;
-    s.pop();
-    std::cout<<s.top()<<std::endl;
-    s.pop();
-    s.push(10);
-    s.pop();
-    std::cout<<s.top()<<std::endl;
+//    MyStack<int> s;
+//    s.push(1);
+//    s.push(2);
+//    s.push(3);
+//    std::cout<<s.top()<<std::endl;
+//    s.pop();
+//    std::cout<<s.top()<<std::endl;
+//    s.push(20);
+//    s.push(4);
+//    std::cout<<s.top()<<std::endl;
+//    s.pop();
+//    std::cout<<s.top()<<std::endl;
+//    s.pop();
+//    std::cout<<s.top()<<std::endl;
+//    s.pop();
+//    s.push(10);
+//    s.pop();
+//    std::cout<<s.top()<<std::endl;
+    queue<int> a;
+    cout<<a.size()<<endl;
+    a.push(NULL);
+    cout<<a.size()<<endl;
     return 0;
 }
