@@ -6,50 +6,50 @@
 
 using namespace std;
 
-class list_node{
-public:
-    list_node():data(0),next(NULL){};
-    list_node(int d, list_node* n):data(d),next(n){};
-    int data;
-    list_node* next;
+struct ListNode {
+    int val;
+    struct ListNode *next;
+    ListNode(int x) :
+            val(x), next(NULL) {
+    }
 };
 
 class myList{
 public:
+    ListNode* pHead;
     myList(int a[],int n)
     {
-        head = new list_node(0,NULL);
-        list_node* current = head;
-        for(int i=0;i<n;i++)
+        pHead = new ListNode(a[0]);
+        ListNode* current = pHead;
+        for(int i=1;i<n;i++)
         {
-            list_node* newNode = new list_node(a[i],NULL);
+            ListNode* newNode = new ListNode(a[i]);
             current->next = newNode;
             current = current->next;
         }
     }
 
-    list_node* head;
 };
 
-void reverseList(myList &c)
-{
-    list_node* Current = c.head->next;
-    list_node* Next = Current->next;
-    c.head->next = NULL;
-    Current->next = NULL;
-    while(Next!=NULL)
-    {
-        list_node* temp = Current;
-        Current = Next;
-        Next = Next->next;
-        Current->next = temp;
-    }
-    c.head->next = Current;
-}
 
-list_node* ReverseList(list_node* pHead) {
-    list_node* temp = pHead;
-    list_node* pre = NULL;
+//ListNode* ReverseList(ListNode* pHead) {
+//    ListNode* Current = pHead;
+//    ListNode* Next = Current->next;
+//    pHead->next = NULL;
+//    while(Next!=NULL)
+//    {
+//        ListNode* temp = Current;
+//        Current = Next;
+//        Next = Next->next;
+//        Current->next = temp;
+//    }
+//    return Current;
+//}
+
+ListNode* ReverseList(ListNode* pHead) {
+    if(pHead==NULL || pHead->next==NULL) return pHead;
+    ListNode* temp = pHead;
+    ListNode* pre = NULL;
     while(temp != NULL){
         temp = pHead->next;
         pHead->next = pre;
@@ -64,21 +64,21 @@ int main()
     int a[12]={1,2,3,4,5,6,7,8,9,10,11,12};
     myList c(a,12);
     cout<<"翻转之前："<<endl;
-    list_node* current = c.head;
+    ListNode* current = c.pHead;
     while(current!=NULL)
     {
-        cout<<current->data<<" ";
+        cout<<current->val<<" ";
         current = current->next;
     }
 
     //reverseList(c);
-    list_node* phead = ReverseList(c.head);
+    ListNode* phead = ReverseList(c.pHead);
 //
     cout<<endl<<"翻转之后："<<endl;
     current = phead;
     while(current!=NULL)
     {
-        cout<<current->data<<" ";
+        cout<<current->val<<" ";
         current = current->next;
     }
 }
