@@ -4,6 +4,8 @@
 #include <iostream>
 #include <string.h>
 #include <string>
+#include <algorithm>
+
 using namespace std;
 
 int dp[100][100];
@@ -27,11 +29,13 @@ int LCS1(string &a,string &b)
 }
 
 int main(){
-    string a,b;
-    int n,m;
-    while (cin>>a>>b)
+    string aaa;
+    while(cin>>aaa)
     {
-        cout<<LCS1(a,b)<<endl;
+        string bbb(aaa);
+        reverse(bbb.begin(),bbb.end());
+        int a=LCS1(aaa,bbb);
+        cout<<
     }
     return 0;
 }

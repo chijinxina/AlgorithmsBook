@@ -1,5 +1,5 @@
 ################################2016-5########################
-add_executable(LCS1 2016-05/LCS1.cpp 2016-05/LCS1_POJ_AGTC.cpp)
+add_executable(LCS1 2016-05/LCS1.cpp)
 add_executable(LCS2 2016-05/LCS2.cpp)
 add_executable(LCS1_huiwenchuan 2016-05/LCS1_huiwenchuan.cpp)
 add_executable(LCS1_POJ_AGTC 2016-05/LCS1_POJ_AGTC.cpp)
@@ -24,3 +24,10 @@ add_executable(primes 筛素数_位操作压缩空间/primes.cpp)
 add_executable(BigNumFact 大数阶乘/BigNumFact.cpp)
 
 add_executable(reverseList 链表翻转/reverseList.cpp)
+
+
+############################
+add_executable(LCS_1 最长公共子序列_不必连续/LCS.cpp)
+add_executable(LCS_2 最长公共子串_连续/LCS2.cpp)
+
+add_executable(min_stack 包含min函数的栈/min_stack.cpp)
