@@ -31,3 +31,5 @@ add_executable(LCS_1 最长公共子序列_不必连续/LCS.cpp)
 add_executable(LCS_2 最长公共子串_连续/LCS2.cpp)
 
 add_executable(min_stack 包含min函数的栈/min_stack.cpp)
+add_executable(ugly 丑数/ugly.cpp)
+add_executable(gcd 辗转相除法/gcd.cpp)
