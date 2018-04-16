@@ -69,18 +69,27 @@ void InsertInterval(map<Intervals,int> &arr, Intervals tmp)
             Intervals tt(newStart,newEnd);
             arr.insert(make_pair(tt,1));
         }
+            /*
+             * 第二种情况 （- *）
+             */
         else if (iter1==arr.end() && iter2!=arr.end())
         {
             arr.erase(iter2);
             Intervals tt(tmp.start,newEnd);
             arr.insert(make_pair(tt,1));
         }
+            /*
+             * 第三种情况 （* -）
+             */
         else if (iter2==arr.end() && iter1!=arr.end())
         {
             arr.erase(iter1);
             Intervals tt(newStart,tmp.end);
             arr.insert(make_pair(tt,1));
         }
+            /*
+             * 第四种情况 （- -）
+             */
         else
         {
             arr.insert(make_pair(tmp,1));

@@ -38,3 +38,5 @@ add_executable(gcd 辗转相除法/gcd.cpp)
 add_executable(add 位运算/add.cpp)
 add_executable(MergeArray 合并区间/MergeArray.cpp)
 add_executable(InsertInterval 合并区间/InsertInterval.cpp)
+
+add_executable(ArrayPairable 数组配对/ArrayPairable.cpp)
