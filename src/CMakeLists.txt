@@ -40,3 +40,4 @@ add_executable(MergeArray 合并区间/MergeArray.cpp)
 add_executable(InsertInterval 合并区间/InsertInterval.cpp)
 
 add_executable(ArrayPairable 数组配对/ArrayPairable.cpp)
+add_executable(partition 快排分区函数/partition.cpp)
