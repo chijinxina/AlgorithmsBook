@@ -30,34 +30,43 @@ int partition2(vector<int> &vec, int start, int end)
 }
 
 
+void quicksort(vector<int> &vec, int start, int end)
+{
+    if(start>=end) return; //递归边界条件
+    int index = partition2(vec,start,end); //快排分区函数
+    quicksort(vec,start,index-1);//递归地排左边
+    quicksort(vec,index+1,end);  //递归地排右边
+}
+
 
 
 int main()
 {
     vector<int> data={3,4,3,1,8,10,12,4,5,7,11,22};
-    int k=6;
-    int n = data.size()-1;
-    int index = partition2(data, 0, n);
-    int left=0,right=n;
-    while(index!=(k-1))
-    {
-        if(index > k-1)
-        {
-            right = index - 1;
-            index = partition2(data, left, right);
-        }
-        else if(index < k-1)
-        {
-            left = index + 1;
-            index = partition2(data, left, right);
-        }
-    }
-
-    for(int i=0;i<k;i++)
-    {
-        cout<<data[i]<<" ";
-    }
-
+//    int k=6;
+//    int n = data.size()-1;
+//    int index = partition2(data, 0, n);
+//    int left=0,right=n;
+//    while(index!=(k-1))
+//    {
+//        if(index > k-1)
+//        {
+//            right = index - 1;
+//            index = partition2(data, left, right);
+//        }
+//        else if(index < k-1)
+//        {
+//            left = index + 1;
+//            index = partition2(data, left, right);
+//        }
+//    }
+//
+//    for(int i=0;i<k;i++)
+//    {
+//        cout<<data[i]<<" ";
+//    }
+    quicksort(data,0,11);
+    for_each(data.begin(),data.end(),[](int x){cout<<x<<" ";});
 
     return 0;
 }
