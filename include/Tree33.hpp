@@ -14,6 +14,10 @@ public:
 class Tree{
 public:
     TreeNode* root;
+
+    TreeNode* p; //LCA p q之间最小公共祖先
+    TreeNode* q;
+
     Tree()
     {
         root = new TreeNode(5);
@@ -32,6 +36,10 @@ public:
         n12->left = NULL;
 
         n23->left = NULL; n23->right=NULL;
+
+        p = n21;
+        q = n22;
+
     }
 
 };
