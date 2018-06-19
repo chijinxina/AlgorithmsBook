@@ -39,3 +39,4 @@ add_executable(treetoDoubleList 二叉搜索树转为双向链表/treetoDoubleLi
 add_executable(LCA_I 二叉树最小公共祖先/最小公共祖先I_二叉搜索树/LCA.cpp)
 
 add_executable(MyStrtok MyStrtok/MyStrtok.cpp)
+add_executable(KMP_test KMP/KMP.cpp)
