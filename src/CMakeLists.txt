@@ -14,7 +14,7 @@ add_executable(Stack_with_MinVal 2017-12/Stack_with_MinVal.cpp) #带最小值的
 add_executable(HeapSort 堆排序/HeapSort.cpp)
 add_executable(QuickSort 快速排序/QuickSort.cpp)
 ###################筛素数_位操作压缩空间####################
-add_executable(primes 筛素数_位操作压缩空间/primes.cpp)
+#add_executable(primes 筛素数_位操作压缩空间/primes.cpp)
 ################大数阶乘######################
 add_executable(BigNumFact 大数阶乘/BigNumFact.cpp)
 add_executable(reverseList 链表翻转/reverseList.cpp)
@@ -25,15 +25,17 @@ add_executable(min_stack 包含min函数的栈/min_stack.cpp)
 add_executable(ugly 丑数/ugly.cpp)
 add_executable(gcd 辗转相除法/gcd.cpp)
 ###############位运算###############
-add_executable(add 位运算/add.cpp)
-add_executable(MergeArray 合并区间/MergeArray.cpp)
+#add_executable(add 位运算/add.cpp)
+#add_executable(MergeArray 合并区间/MergeArray.cpp)
 add_executable(InsertInterval 合并区间/InsertInterval.cpp)
 add_executable(ArrayPairable 数组配对/ArrayPairable.cpp)
 add_executable(partition 快排分区函数/partition.cpp)
 add_executable(arrayRepeat 判断数组中有无重复元素/arrayRepeat.cpp)
-add_executable(TopK2 TopKII_和大于等于k的数目最少子数组/TopK2.cpp)
+#add_executable(TopK2 TopKII_和大于等于k的数目最少子数组/TopK2.cpp)
 add_executable(CircleLength 单链表环的长度/CircleLength.cpp)
 add_executable(deleteDuplicates 链表去重/deleteDuplicates.cpp)
 add_executable(treetoDoubleList 二叉搜索树转为双向链表/treetoDoubleList.cpp)
 
 add_executable(LCA_I 二叉树最小公共祖先/最小公共祖先I_二叉搜索树/LCA.cpp)
+
+add_executable(MyStrtok MyStrtok/MyStrtok.cpp)
