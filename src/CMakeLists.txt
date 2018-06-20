@@ -31,7 +31,7 @@ add_executable(InsertInterval 合并区间/InsertInterval.cpp)
 add_executable(ArrayPairable 数组配对/ArrayPairable.cpp)
 add_executable(partition 快排分区函数/partition.cpp)
 add_executable(arrayRepeat 判断数组中有无重复元素/arrayRepeat.cpp)
-#add_executable(TopK2 TopKII_和大于等于k的数目最少子数组/TopK2.cpp)
+add_executable(TopK2 TopKII_和大于等于k的数目最少子数组/TopK2.cpp)
 add_executable(CircleLength 单链表环的长度/CircleLength.cpp)
 add_executable(deleteDuplicates 链表去重/deleteDuplicates.cpp)
 add_executable(treetoDoubleList 二叉搜索树转为双向链表/treetoDoubleList.cpp)
@@ -40,3 +40,5 @@ add_executable(LCA_I 二叉树最小公共祖先/最小公共祖先I_二叉搜�
 
 add_executable(MyStrtok MyStrtok/MyStrtok.cpp)
 add_executable(KMP_test KMP/KMP.cpp)
+
+add_executable(HDU1232 并查集_图的连通性问题/HDU1232.cpp)
