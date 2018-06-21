@@ -42,3 +42,4 @@ add_executable(MyStrtok MyStrtok/MyStrtok.cpp)
 add_executable(KMP_test KMP/KMP.cpp)
 
 add_executable(HDU1232 并查集_图的连通性问题/HDU1232.cpp)
+add_executable(Kruska kruskal算法与并查集/kruska.cpp)
