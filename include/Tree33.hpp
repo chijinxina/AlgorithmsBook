@@ -34,6 +34,7 @@ public:
         n22->left = NULL; n22->right=NULL;
 
         n12->left = NULL;
+        n12->right=n23;
 
         n23->left = NULL; n23->right=NULL;
 

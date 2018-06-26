@@ -43,3 +43,4 @@ add_executable(KMP_test KMP/KMP.cpp)
 
 add_executable(HDU1232 并查集_图的连通性问题/HDU1232.cpp)
 add_executable(Kruska kruskal算法与并查集/kruska.cpp)
+add_executable(traverse 二叉树的非递归遍历/traverse.cpp)
