@@ -36,6 +36,8 @@ add_executable(CircleLength 单链表环的长度/CircleLength.cpp)
 add_executable(deleteDuplicates 链表去重/deleteDuplicates.cpp)
 add_executable(treetoDoubleList 二叉搜索树转为双向链表/treetoDoubleList.cpp)
 
+add_executable(DFS_BFS_BinTree 二叉树深搜和广搜/DFS_BFS_BinTree.cpp)
+
 add_executable(LCA_I 二叉树最小公共祖先/最小公共祖先I_二叉搜索树/LCA.cpp)
 
 add_executable(MyStrtok MyStrtok/MyStrtok.cpp)
@@ -45,3 +47,5 @@ add_executable(HDU1232 并查集_图的连通性问题/HDU1232.cpp)
 add_executable(Kruska kruskal算法与并查集/kruska.cpp)
 add_executable(traverse 二叉树的非递归遍历/traverse.cpp)
 add_executable(DynamicArray 数据流中的中位数/DynamicArray.cpp)
+
+add_executable(GetNodePath 二叉树查找节点并获得根到该节点的路径/GetNodePath.cpp)
