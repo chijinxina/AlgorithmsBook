@@ -50,3 +50,8 @@ add_executable(traverse 二叉树的非递归遍历/traverse.cpp)
 add_executable(DynamicArray 数据流中的中位数/DynamicArray.cpp)
 
 add_executable(GetNodePath 二叉树查找节点并获得根到该节点的路径/GetNodePath.cpp)
+
+###########K-SUM##################################
+add_executable(2Sum K-SUM问题/twoSum.cpp)
+add_executable(3Sum K-SUM问题/3Sum.cpp)
+add_executable(kSum K-SUM问题/kSum.cpp)
