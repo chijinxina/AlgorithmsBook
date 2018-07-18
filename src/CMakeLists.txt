@@ -55,3 +55,6 @@ add_executable(GetNodePath 二叉树查找节点并获得根到该节点的路�
 add_executable(2Sum K-SUM问题/twoSum.cpp)
 add_executable(3Sum K-SUM问题/3Sum.cpp)
 add_executable(kSum K-SUM问题/kSum.cpp)
+
+#############动态规划零钱问题########################
+add_executable(changes 动态规划零钱问题/changes.cpp)
