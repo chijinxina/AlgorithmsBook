@@ -21,12 +21,12 @@ void DepthFirstSearch(TreeNode* root)
         TreeNode* current = s.top();
         cout<<current->val<<" ";
         s.pop();
-        //先将右子数压栈
+        //先将右子数压栈 ！！！
         if(current->right!=NULL)
         {
             s.push(current->right);
         }
-        //再将左子树压栈
+        //再将左子树压栈  ！！！
         if(current->left!=NULL)
         {
             s.push(current->left);

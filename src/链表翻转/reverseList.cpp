@@ -46,17 +46,37 @@ public:
 //    return Current;
 //}
 
-ListNode* ReverseList(ListNode* pHead) {
-    if(pHead==NULL || pHead->next==NULL) return pHead;
+ListNode* ReverseList(ListNode* pHead)
+{
+    if(pHead==NULL || pHead->next==NULL)
+        return pHead;
+
     ListNode* temp = pHead;
     ListNode* pre = NULL;
-    while(temp != NULL){
+
+    while(temp != NULL)
+    {
         temp = pHead->next;
         pHead->next = pre;
         pre = pHead;
         pHead = temp;
     }
     return pre;
+}
+
+//递归法翻转链表
+ListNode* ReverseList_digui(ListNode* pHead, ListNode* newHead)
+{
+    if(pHead==NULL || pHead->next==NULL)
+    {
+        newHead = pHead;
+        return pHead;
+    }
+    //递归调用
+    ListNode* pre = ReverseList_digui(pHead->next, newHead);
+    pre->next = pHead;  //翻转指针指向
+    pHead->next = NULL;
+    return pHead;       //返回新的链表头
 }
 
 int main()
@@ -72,7 +92,9 @@ int main()
     }
 
     //reverseList(c);
-    ListNode* phead = ReverseList(c.pHead);
+    ListNode* newHead = NULL;
+    ListNode* phead = ReverseList_digui(c.pHead,newHead);
+ //   ListNode* phead = ReverseList(c.pHead);
 //
     cout<<endl<<"翻转之后："<<endl;
     current = phead;
