@@ -62,3 +62,8 @@ add_executable(kSum K-SUM问题/kSum.cpp)
 
 #############动态规划零钱问题########################
 add_executable(changes 动态规划零钱问题/changes.cpp)
+
+############区间求和与线段树#########################
+add_executable(BuildSegmentTree 区间求和和线段树/线段树的构造/BuildSegmentTree.cpp)
+add_executable(SearchSegmentTree 区间求和和线段树/线段树的查询/SearchSegmentTree.cpp)
+add_executable(SumOfInterval 区间求和和线段树/区间求和/SumOfInterval.cpp)
