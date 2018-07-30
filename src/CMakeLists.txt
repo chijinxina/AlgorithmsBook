@@ -13,6 +13,9 @@ add_executable(Stack_with_MinVal 2017-12/Stack_with_MinVal.cpp) #带最小值的
 ############################堆排序#######################
 add_executable(HeapSort 堆排序/HeapSort.cpp)
 add_executable(QuickSort 快速排序/QuickSort.cpp)
+add_executable(QSort_partition 快速排序/QSort_partition.cpp)
+add_executable(QuickSort_withoutdigui 非递归快速排序/QuickSort_withoutdigui.cpp)
+
 ###################筛素数_位操作压缩空间####################
 add_executable(primes 筛素数_位操作压缩空间/primes.cpp)
 ################大数阶乘######################
