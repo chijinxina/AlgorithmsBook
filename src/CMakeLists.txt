@@ -71,3 +71,6 @@ add_executable(changes 动态规划零钱问题/changes.cpp)
 add_executable(BuildSegmentTree 区间求和和线段树/线段树的构造/BuildSegmentTree.cpp)
 add_executable(SearchSegmentTree 区间求和和线段树/线段树的查询/SearchSegmentTree.cpp)
 add_executable(SumOfInterval 区间求和和线段树/区间求和/SumOfInterval.cpp)
+
+
+add_executable(FindFirstCommonNode 两个链表的公共节点/FindFirstCommonNode.cpp)
