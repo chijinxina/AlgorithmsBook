@@ -21,6 +21,7 @@ add_executable(primes 筛素数_位操作压缩空间/primes.cpp)
 ################大数阶乘######################
 add_executable(BigNumFact 大数阶乘/BigNumFact.cpp)
 add_executable(reverseList 链表翻转/reverseList.cpp)
+add_executable(ReverseList 链表翻转/ReverseList.cpp)
 ############################
 add_executable(LCS_1 最长公共子序列_不必连续/LCS.cpp)
 add_executable(LCS_2 最长公共子串_连续/LCS2.cpp)
