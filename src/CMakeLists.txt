@@ -74,3 +74,4 @@ add_executable(SumOfInterval 区间求和和线段树/区间求和/SumOfInterval
 
 
 add_executable(FindFirstCommonNode 两个链表的公共节点/FindFirstCommonNode.cpp)
+add_executable(HeapOfSortArraySum 求两个有序数组相加和的最小的K个数/HeapOfSortArraySum.cpp)
