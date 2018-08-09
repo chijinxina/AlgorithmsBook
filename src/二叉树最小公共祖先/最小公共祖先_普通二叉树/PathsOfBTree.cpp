@@ -215,6 +215,16 @@ public void findPath(Node root ,int n){
             }
         }
 
+        /*
+         * 递归法反向打印字符串
+         */
+        void EndToFirstPrintSListNodeR(SListNode *ps)//递归打印
+        {
+            if (NULL != ps->_next) //递归结束条件
+                EndToFirstPrintSListNodeR(ps->_next);  //子问题
+            printf("%d ",ps->_data);
+        }
+
 
 int main()
 {
