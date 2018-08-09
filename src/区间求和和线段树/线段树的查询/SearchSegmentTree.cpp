@@ -64,7 +64,6 @@ long long query(SegmentTreeNode* root, int start, int end)
 
     else if(end < mid+1)
         return query(root->left,start,end);
-
     else
         return query(root->left,start,mid) + query(root->right, mid+1, end);
 }

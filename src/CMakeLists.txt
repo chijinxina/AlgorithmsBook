@@ -75,3 +75,6 @@ add_executable(SumOfInterval 区间求和和线段树/区间求和/SumOfInterval
 
 add_executable(FindFirstCommonNode 两个链表的公共节点/FindFirstCommonNode.cpp)
 add_executable(HeapOfSortArraySum 求两个有序数组相加和的最小的K个数/HeapOfSortArraySum.cpp)
+add_executable(GeneratePailie 分治法按字典序打印1到N数字的全排列/GeneratePailie.cpp)
+add_executable(BuildBTree 由前序中序构建二叉树/BuildBTree.cpp)
+add_executable(PathsOfBTree 二叉树最小公共祖先/最小公共祖先_普通二叉树/PathsOfBTree.cpp)
