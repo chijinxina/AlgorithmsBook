@@ -62,6 +62,26 @@ vector<string> binaryTreePaths(TreeNode* root) {
 }
 
 
+
+public void findPath(Node root ,int n){
+    if(root!=null)
+    {
+        stack.push(root);
+        n = n-root.value;
+        if(n==0 && root.left==null && root.right==null){
+            for(Node no:stack){
+                System.out.print(no.value);
+            }
+            System.out.println();
+        }
+
+        findPath(root.left, n);
+        findPath(root.right, n);
+        stack.pop();
+    }
+
+
+
 int main()
 {
     Tree tree;
