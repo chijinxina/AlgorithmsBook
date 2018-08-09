@@ -121,6 +121,99 @@ public void findPath(Node root ,int n){
         return k;
     }
 
+    /*
+     * 最长递增子序列
+     */
+    private static int lis(int[] arr, int length){
+        int lis[] = new int[length];
+
+        //init
+        for(int i = 0; i < length; i++)
+            lis[i] = 1;
+
+        for(int i = 1; i < length; i++)
+        {
+            for(int j = 0; j < i; j++)
+            {
+
+                if(arr[i] > arr[j])
+                {
+                    if(lis[j] + 1 > lis[i])
+                        lis[i] = lis[j] + 1;
+                }
+                else{
+                    if(lis[j] > lis[i])
+                        lis[i] = lis[j];
+                }
+            }
+        }
+
+        /*
+         * 最短编辑距离
+         */
+
+        public class Levenshtein {
+
+            /**
+             * 获取两字符串的相似度
+             * @param source 初始串
+             * @param target 比较串
+             * @return 相似度
+             */
+        public static float getSimilarityRatio(String source, String target) {
+                return 1 - (float) compare(source, target) / Math.max(source.length(), target.length());
+            }
+
+        private static int compare(String source, String target) {
+
+                int matrix[][];
+                int n = source.length();
+                int m = target.length();
+                int i; //source索引
+                int j; //target索引
+                char ch1;
+                char ch2;
+                int temp; //记录相同字符,值为0/1
+
+                if (n == 0)
+                    return m;
+
+                if (m == 0)
+                    return n;
+
+                matrix = new int[n + 1][m + 1];
+                for (i = 0; i <= n; i++) { //初始化第一列
+                    matrix[i][0] = i;
+                }
+
+                for (j = 0; j <= m; j++) { //初始化第一行
+                    matrix[0][j] = j;
+                }
+
+                for (i = 1; i <= n; i++) { //遍历source
+                    ch1 = source.charAt(i - 1);
+                    //匹配target
+                    for (j = 1; j <= m; j++) {
+                        ch2 = target.charAt(j - 1);
+                        if (ch1 == ch2) temp = 0;
+                        else temp = 1;
+                        //左+1,上+1,左上+temp 取最小
+                        matrix[i][j] = min(matrix[i - 1][j] + 1, matrix[i][j - 1] + 1, matrix[i - 1][j - 1] + temp);
+                    }
+                }
+                return matrix[n][m];
+            }
+
+        private static int min(int one, int two, int three) {
+                return (one = one < two ? one : two) < three ? one : three;
+            }
+
+        public static void main(String[] args) {
+                String source = "中国";
+                String target = "中国人";
+                System.out.println("similarityRatio=" + Levenshtein.getSimilarityRatio(source, target));
+            }
+        }
 
 
 int main()
