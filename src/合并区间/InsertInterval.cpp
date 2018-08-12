@@ -27,6 +27,28 @@ ostream& operator<< (ostream &out, const Intervals &t)
     return out;
 }
 
+/*
+ * 合并区间
+ */
+vector<Intervals> CoverIntervals(vector<Intervals> &vec)
+{
+    if(vec.size()<=1) return vec;
+    sort(vec.begin(), vec.end());
+    vector<Intervals> result{vec[0]};
+    for(int i=0;i<vec.size();i++)
+    {
+        if(result.back().end < vec[i].start)
+        {
+            result.push_back(vec[i]);
+        }
+        else
+        {
+            result.back().end = std::max(result.back().end, vec[i].end);
+        }
+    }
+    return result;
+}
+
 
 /*
  * 插入一个新区间到区间集合中区
@@ -132,6 +154,15 @@ int main()
     InsertInterval(arr,t6);
     for_each(arr.begin(),arr.end(),[](pair<Intervals,int> x){cout<<x.first<<" ";}); cout<<endl;
 
+
+    /*
+     * 合并区间
+     */
+    Intervals t10(1,6);
+    Intervals t11(6,10);
+    Intervals t12(15,20);
+    vector<Intervals> vec = {t10,t11,t12};
+    vector<Intervals> result1 = CoverIntervals(vec);
 
     return 0;
 }
