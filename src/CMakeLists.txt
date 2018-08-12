@@ -82,3 +82,4 @@ add_executable(PathsOfBTree 二叉树最小公共祖先/最小公共祖先_普�
 add_executable(Search_first_larger_k 有序数组中找到第一个大于等于K的数的下标/Search_first_larger_k.cpp)
 add_executable(isSubTree 树的子结构/isSubTree.cpp)
 add_executable(PrintMatrix 顺时针打印矩阵/PrintMatrix.cpp)
+add_executable(min_max_in_intervals 区间求和和线段树/区间最值/min_max_in_intervals.cpp)
