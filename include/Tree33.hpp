@@ -43,4 +43,21 @@ public:
 
     }
 
+    Tree(int flag)
+    {
+        //树的子结构
+        if(flag==1)
+        {
+            root = new TreeNode(3);
+            TreeNode* n11 = new TreeNode(1);
+            TreeNode* n12 = new TreeNode(4);
+            root->left = n11;
+            root->right= n12;
+            n11->left = NULL;
+            n11->right= NULL;
+            n12->left = NULL;
+            n12->right= NULL;
+        }
+    }
+
 };

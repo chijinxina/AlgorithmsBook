@@ -3,11 +3,13 @@
 //
 #include <iostream>
 #include <string.h>
+#include <vector>
 using namespace std;
 
 //计算next数组
 void cal_next(char* str, int* next, int len)
 {
+    vector<int> ca;
     next[0] = -1; //next[0]初始化为-1，-1表示不存在相同的最大前缀和最大后缀
     int k = -1; //k初始化为-1
     for(int i=1; i<len; i++)
@@ -21,6 +23,7 @@ void cal_next(char* str, int* next, int len)
             k++;
         }
         next[i] = k;  //算出的k的值（即相同的最大前缀和最大后缀的长度）赋值给next[i]
+        ca.push_back(next[i]);
     }
 }
 
@@ -49,9 +52,15 @@ int KMP(char* str, int slen, char* ptr, int plen)
 
 int main()
 {
-    char *str = "bacbababadababacambabacaddababacasdsd";
-    char *ptr = "ababaca";
-    int a = KMP(str, 36, ptr, 7);
-    cout<<a<<endl;
+//    char *str = "bacbababadababacambabacaddababacasdsd";
+//    char *ptr = "ababaca";
+//    int a = KMP(str, 36, ptr, 7);
+    char* bbb = "abcdabc";
+    char* aaa = "abaabcac";
+
+    int c = KMP(bbb, 7, aaa, 8);
+
+
+   // cout<<a<<endl;
     return 0;
 }

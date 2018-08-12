@@ -78,3 +78,7 @@ add_executable(HeapOfSortArraySum 求两个有序数组相加和的最小的K个
 add_executable(GeneratePailie 分治法按字典序打印1到N数字的全排列/GeneratePailie.cpp)
 add_executable(BuildBTree 由前序中序构建二叉树/BuildBTree.cpp)
 add_executable(PathsOfBTree 二叉树最小公共祖先/最小公共祖先_普通二叉树/PathsOfBTree.cpp)
+
+add_executable(Search_first_larger_k 有序数组中找到第一个大于等于K的数的下标/Search_first_larger_k.cpp)
+add_executable(isSubTree 树的子结构/isSubTree.cpp)
+add_executable(PrintMatrix 顺时针打印矩阵/PrintMatrix.cpp)
