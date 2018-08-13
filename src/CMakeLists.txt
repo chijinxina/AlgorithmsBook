@@ -83,3 +83,5 @@ add_executable(Search_first_larger_k 有序数组中找到第一个大于等于K
 add_executable(isSubTree 树的子结构/isSubTree.cpp)
 add_executable(PrintMatrix 顺时针打印矩阵/PrintMatrix.cpp)
 add_executable(min_max_in_intervals 区间求和和线段树/区间最值/min_max_in_intervals.cpp)
+
+add_executable(SerializeBTree 二叉树的序列化与二叉树的构造/SerializeTree.cpp)
