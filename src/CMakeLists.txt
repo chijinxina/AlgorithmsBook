@@ -85,3 +85,5 @@ add_executable(PrintMatrix 顺时针打印矩阵/PrintMatrix.cpp)
 add_executable(min_max_in_intervals 区间求和和线段树/区间最值/min_max_in_intervals.cpp)
 
 add_executable(SerializeBTree 二叉树的序列化与二叉树的构造/SerializeTree.cpp)
+add_executable(maxInWindows 滑动窗口中数据最大值/maxInWindows.cpp)
+add_executable(VerifySequeceOfBST 二叉树搜索树的后序遍历序列/VerifySequeceOfBST.cpp)

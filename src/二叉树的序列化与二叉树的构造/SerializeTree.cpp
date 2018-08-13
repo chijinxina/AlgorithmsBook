@@ -5,6 +5,7 @@
 #include <string>
 #include <sstream>
 #include "Tree33.hpp"
+#include <typeinfo>
 using namespace std;
 /*
  * 二叉树的序列化
@@ -23,6 +24,9 @@ void SerializeBTree(TreeNode* root, string &result)
     SerializeBTree(root->right, result);
 }
 
+/*
+ * 二叉树的反序列化
+ */
 TreeNode* DeSerializeBTree(istringstream &in)
 {
     string val;
@@ -31,11 +35,13 @@ TreeNode* DeSerializeBTree(istringstream &in)
     {
         return NULL;
     }
+
     TreeNode* root = new TreeNode(atoi(val.c_str()));
     root->left = DeSerializeBTree(in);
     root->right= DeSerializeBTree(in);
     return root;
 }
+
 
 
 int main()
