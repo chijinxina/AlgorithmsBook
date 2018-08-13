@@ -87,3 +87,5 @@ add_executable(min_max_in_intervals 区间求和和线段树/区间最值/min_ma
 add_executable(SerializeBTree 二叉树的序列化与二叉树的构造/SerializeTree.cpp)
 add_executable(maxInWindows 滑动窗口中数据最大值/maxInWindows.cpp)
 add_executable(VerifySequeceOfBST 二叉树搜索树的后序遍历序列/VerifySequeceOfBST.cpp)
+add_executable(BTree_paths 二叉树根节点到叶子节点所有路径/BTree_paths.cpp)
+add_executable(FindSumPathInBTree 二叉树根节点到叶子节点所有路径/FindSumPathInBTree.cpp)
