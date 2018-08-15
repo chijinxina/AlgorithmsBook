@@ -90,3 +90,4 @@ add_executable(VerifySequeceOfBST 二叉树搜索树的后序遍历序列/Verify
 add_executable(BTree_paths 二叉树根节点到叶子节点所有路径/BTree_paths.cpp)
 add_executable(FindSumPathInBTree 二叉树根节点到叶子节点所有路径/FindSumPathInBTree.cpp)
 add_executable(RepalceBlank 替换空格/RepalceBlank.cpp)
+add_executable(PrintListFromTailToHead 链表从尾到头打印/PrintListFromTailToHead.cpp)
