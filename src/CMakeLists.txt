@@ -91,3 +91,6 @@ add_executable(BTree_paths 二叉树根节点到叶子节点所有路径/BTree_p
 add_executable(FindSumPathInBTree 二叉树根节点到叶子节点所有路径/FindSumPathInBTree.cpp)
 add_executable(RepalceBlank 替换空格/RepalceBlank.cpp)
 add_executable(PrintListFromTailToHead 链表从尾到头打印/PrintListFromTailToHead.cpp)
+
+add_executable(CharStatistics 字符流中的一个不重复的字符/CharStatistics.cpp)
+add_executable(printPathOfMatrix 矩阵左上角到右下角所有的路径/printPathOfMatrix.cpp)
