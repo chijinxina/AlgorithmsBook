@@ -21,18 +21,23 @@ void printPath(vector<vector<int>> &matrix,vector<vector<int>> &result, int x, i
     int m = matrix.size();
     int n= matrix[0].size();
 
+    //边界条件
     if(x>m-1 || y >n-1) return;
 
+    //首先将元素保存到数组中
     res.push_back(matrix[x][y]);
+    //递归下方元素
     printPath(matrix,result, x+1, y);
 
+    //找到出口，保存路径
     if(x == m-1 && y == n-1)
     {
         result.push_back(res);
     }
-
+    //递归右方元素
     printPath(matrix,result, x, y+1);
 
+    //没有找到出口，将尾部元素删除
     res.pop_back();
 }
 
