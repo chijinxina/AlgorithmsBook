@@ -38,7 +38,7 @@ vector<int> maxInWindows(const vector<int>& num, unsigned int size)
             {
                 index.pop_back();
             }
-            if(!index.empty() && index.front() <= (i-size))
+            if(!index.empty() && i - index.front() >= size)
             {
                 index.pop_front();
             }
@@ -52,5 +52,7 @@ vector<int> maxInWindows(const vector<int>& num, unsigned int size)
 
 int main()
 {
+    vector<int> vec{1,2,3,3,2,5,7,3,2,8,9,1};
+    maxInWindows(vec,3);
     return 0;
 }

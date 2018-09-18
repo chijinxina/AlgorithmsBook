@@ -95,3 +95,10 @@ add_executable(PrintListFromTailToHead 链表从尾到头打印/PrintListFromTai
 add_executable(CharStatistics 字符流中的一个不重复的字符/CharStatistics.cpp)
 add_executable(printPathOfMatrix 矩阵左上角到右下角所有的路径/printPathOfMatrix.cpp)
 add_executable(large_mul 大数乘方_快速幂算法/large_mul.cpp)
+
+
+#####################leetcode#################################
+add_executable(525 leetcode/525_01数组数目相同的最长子数组区间/525.cpp)
+add_executable(rotation_search leetcode/旋转有序子数组的二分查找/rotation_search.cpp)
+
+add_executable(IsBalance 二叉树是否平衡/IsBalance.cpp)
