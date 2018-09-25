@@ -104,3 +104,4 @@ add_executable(rotation_search leetcode/旋转有序子数组的二分查找/rot
 add_executable(IsBalance 二叉树是否平衡/IsBalance.cpp)
 
 add_executable(medianOfTwoSortedArrays leetcode/两个排序数组的中位数/medianOfTwoSortedArrays.cpp)
+add_executable(leetcode_2sum leetcode/2sum/leetcode_2sum.cpp)
