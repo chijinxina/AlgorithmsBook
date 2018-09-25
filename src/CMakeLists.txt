@@ -102,3 +102,5 @@ add_executable(525 leetcode/525_01数组数目相同的最长子数组区间/525
 add_executable(rotation_search leetcode/旋转有序子数组的二分查找/rotation_search.cpp)
 
 add_executable(IsBalance 二叉树是否平衡/IsBalance.cpp)
+
+add_executable(medianOfTwoSortedArrays leetcode/两个排序数组的中位数/medianOfTwoSortedArrays.cpp)
