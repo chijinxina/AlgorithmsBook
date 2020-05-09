@@ -8,9 +8,18 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 #####################dependenicecs##########################
 set(THIRD_PARTY_LIBS
         )
-
-
-include_directories(${PROJECT_SOURCE_DIR}/include)
+include_directories(${PROJECT_SOURCE_DIR}/include
+        ${PROJECT_SOURCE_DIR}/多线程/实现WaitGroup
+        )
 ####################source and test#########################
 add_subdirectory(src)
-#add_subdirectory(test)
+
+
+# leetcode 136 只出现一次的数字
+add_executable(singleNumber1 只出现一次的数字/SingleNumber.cpp)
+
+
+# 两个线程交替打印奇偶数
+add_executable(twoThreadsPrint 多线程/两个线程交替打印奇偶数/TwoThreadsPrint.cpp)
+# 三个线程依次打印零奇偶数
+add_executable(threeThreadsPrint 多线程/三个线程依次打印零奇偶数/ThreeThreadsPrint.cpp 多线程/实现WaitGroup/WaitGroup.cpp)
