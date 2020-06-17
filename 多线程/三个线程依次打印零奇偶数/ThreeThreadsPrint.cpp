@@ -69,6 +69,25 @@ public:
   }
 };
 
+
+class Barries {
+public:
+  template <class F, class ...Args>
+  void Register(string name, F&& f, Args&& ...args) {
+    wg_.Add(1);
+    works_.emplace(name, [this](F&& f, Args&& ...args){
+      f();
+      this->wg_.Done();
+    });
+  }
+  void WaitDone() {
+    wg_.Wait();
+  }
+private:
+  WaitGroup wg_;
+  std::unordered_map<string, std::thread> works_;
+};
+
 int main(){
   auto printNumber = [](int i){
       cout << i;
